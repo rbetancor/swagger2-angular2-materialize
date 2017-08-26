@@ -10,6 +10,7 @@
     "suppressImplicitAnyIndexErrors": true,
     "sourceMap": true,
     "sourceRoot": "src",
+    "lib": ["es6", "dom"],
     "types": [
       "jasmine",
       "node",

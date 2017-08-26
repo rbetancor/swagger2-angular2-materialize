@@ -24,10 +24,10 @@ export class HeaderComponent extends ThemeableComponent {
     }
     onChangeApi(event: Event): void {
         event.preventDefault();
-        $('#modal1').openModal();
+        $('#modal1').modal('show');
     }
     onCloseModal(event: Event): void {
         event.preventDefault();
-        $('#modal1').closeModal();
+        $('#modal1').modal('hide');
     }
 }

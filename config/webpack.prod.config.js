@@ -29,7 +29,6 @@ module.exports = webpackMerge(commonConfig, {
         // Clean dist directory
         new CleanWebpackPlugin([helpers.root('dist')]),
         new webpack.NoErrorsPlugin(),
-        new webpack.optimize.DedupePlugin(),
         /*new webpack.optimize.UglifyJsPlugin({ // Does not work for now
             mangle: {
                 keep_fnames: true
@@ -40,6 +39,9 @@ module.exports = webpackMerge(commonConfig, {
             'process.env': {
                 'ENV': JSON.stringify(ENV)
             }
-        })
+        }) //,
+        //new webpack.optimize.LoaderOptionsPlugin({
+        //    debug: true
+        //})
     ]
 });
